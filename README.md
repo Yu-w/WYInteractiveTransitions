@@ -30,11 +30,17 @@ $ cd WYInteractiveTransitions
 ```
 $ let transitionMgr = WYTransitionManager()
 ```
-4) Configure WYTransitionManager in proper position (normally in prepare segue)
+4) Configure WYTransitionManager in proper position
 ```
 $ transitionMgr.configureTransition(duration: 0.5, toViewController: toView!, 
-$                                 handGestureEnable: true, transitionType: WYTransitoinType.Push)
+                                 handGestureEnable: true, transitionType: WYTransitoinType.Push)
 ```
+5) Present view controller or dismiss would invoke the transitions
+* ``performSegueWithIdentifier``
+* ``presentViewController``
+* ``dismissViewController``
+* ``unwindViewController``
+* etc...
 
 # Demo
 1) Download the repository
@@ -74,4 +80,4 @@ $ else if gesture.state == .Cancelled || gesture.state == .Failed || gesture.sta
 $   finishInteractiveTransition()
 $ }
 ```
-The perfect solution is to add ``cancelInteractiveTransition()`` in above gesture selector, but a new problem arised: whenever ``cancelInteractiveTransition()`` is called, the dismissed view controller is no longer exist; therefore a black screen is displayed. 
+The perfect solution is to add ``cancelInteractiveTransition()`` in above gesture selector, but a new problem arised: whenever ``cancelInteractiveTransition()`` is called, the dismissed view controller is no longer exist; therefore a black screen is displayed.
