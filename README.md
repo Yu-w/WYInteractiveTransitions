@@ -16,8 +16,8 @@ $ let transitionMgr = WYTransitionManager()
 ```
 4) Configure WYTransitionManager in proper position (normally in prepare segue)
 ```
-$       WYTransitionMgr.configureTransition(duration: 0.5, toViewController: toView!, 
-$                                           handGestureEnable: true, transitionType: WYTransitoinType.Push)
+$ WYTransitionMgr.configureTransition(duration: 0.5, toViewController: toView!, 
+$                                     handGestureEnable: true, transitionType: WYTransitoinType.Push)
 ```
 
 # Demo
