@@ -2,11 +2,15 @@
 Customized transitions between view controllers for iOS. One Line of code with fully interactive animations. Written purely in Swift.
 
 # Animations
-* Push
-* SlideUp
-* Swing
-* Zoom
-* Your customized animations
+Push
+<img src="./Screenshots/push.gif" width="320" height="550"/>
+SlideUp
+<img src="./Screenshots/up.gif" width="320" height="550"/>
+Swing
+<img src="./Screenshots/swing.gif" width="320" height="550"/>
+Zoom
+<img src="./Screenshots/zoom.gif" width="320" height="550"/>
+* And your customized animations
 
 # Usage
 1) Download the repository
@@ -57,4 +61,3 @@ $ }
 # Requirements
 * Xcode 6
 * iOS 7
-
