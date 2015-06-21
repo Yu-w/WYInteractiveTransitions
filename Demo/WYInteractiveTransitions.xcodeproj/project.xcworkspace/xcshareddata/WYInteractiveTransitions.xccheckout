@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>E0B3CA07-1F29-4704-9245-2E9D120ABE5E</string>
+	<key>IDESourceControlProjectName</key>
+	<string>project</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>CF54EFFD275FF167CDB4EF3C230E24443446C51F</key>
+		<string>github.com:bintao/PosterBox.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>WYInteractiveTransitions/WYInteractiveTransitions.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>CF54EFFD275FF167CDB4EF3C230E24443446C51F</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:bintao/PosterBox.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>CF54EFFD275FF167CDB4EF3C230E24443446C51F</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>CF54EFFD275FF167CDB4EF3C230E24443446C51F</string>
+			<key>IDESourceControlWCCName</key>
+			<string>PosterBox</string>
+		</dict>
+	</array>
+</dict>
+</plist>
