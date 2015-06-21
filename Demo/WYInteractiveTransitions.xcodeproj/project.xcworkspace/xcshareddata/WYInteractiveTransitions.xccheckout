@@ -7,34 +7,34 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>E0B3CA07-1F29-4704-9245-2E9D120ABE5E</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>WYInteractiveTransitions</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>CF54EFFD275FF167CDB4EF3C230E24443446C51F</key>
-		<string>github.com:bintao/PosterBox.git</string>
+		<key>A7F916CB7DEC2FB8D69338F3EED1CA7958166BE7</key>
+		<string>github.com:yuwang17/WYInteractiveTransitions.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>WYInteractiveTransitions/WYInteractiveTransitions.xcodeproj/project.xcworkspace</string>
+	<string>Demo/WYInteractiveTransitions.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>CF54EFFD275FF167CDB4EF3C230E24443446C51F</key>
+		<key>A7F916CB7DEC2FB8D69338F3EED1CA7958166BE7</key>
 		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>github.com:bintao/PosterBox.git</string>
+	<string>github.com:yuwang17/WYInteractiveTransitions.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>CF54EFFD275FF167CDB4EF3C230E24443446C51F</string>
+	<string>A7F916CB7DEC2FB8D69338F3EED1CA7958166BE7</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>CF54EFFD275FF167CDB4EF3C230E24443446C51F</string>
+			<string>A7F916CB7DEC2FB8D69338F3EED1CA7958166BE7</string>
 			<key>IDESourceControlWCCName</key>
-			<string>PosterBox</string>
+			<string>WYInteractiveTransitions</string>
 		</dict>
 	</array>
 </dict>

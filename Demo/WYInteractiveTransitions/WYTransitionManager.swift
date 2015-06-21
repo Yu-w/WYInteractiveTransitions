@@ -76,7 +76,7 @@ class WYTransitionManager: UIPercentDrivenInteractiveTransition, UIViewControlle
             toView.transform = self.presenting ? moveToRight : moveToLeft
             container.addSubview(toView)
             container.addSubview(fromView)
-            UIView.animateWithDuration(0.5, delay: 0, usingSpringWithDamping: 0.8, initialSpringVelocity: 0.7, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
+            UIView.animateWithDuration(0.5, delay: 0, usingSpringWithDamping: 0.7, initialSpringVelocity: 0.7, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
                 fromView.transform = self.presenting ? moveToLeft : moveToRight
                 toView.transform = CGAffineTransformIdentity
                 }) { (finished) -> Void in
