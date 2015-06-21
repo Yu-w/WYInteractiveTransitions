@@ -1,7 +1,7 @@
 # WYInteractiveTransitions
 Customized transitions between view controllers for iOS. One Line of code with fully interactive animations. Written purely in Swift.
 
-# Animations
+**Animations**
 * Push
 
 <img src="./Screenshots/push.gif" width="320" height="550"/>
@@ -66,3 +66,12 @@ $ }
 # Requirements
 * Xcode 6
 * iOS 7
+
+# Flaws
+With gesutre enabled, there's no way animated to dismissed view controller when user screen edge pan gesture is cancelled.
+```
+$ else if gesture.state == .Cancelled || gesture.state == .Failed || gesture.state == .Ended {
+$   finishInteractiveTransition()
+$ }
+```
+The perfect solution is to add ``cancelInteractiveTransition()`` in above gesture selector, but a new problem arised: whenever ``cancelInteractiveTransition()`` is called, the dismissed view controller is no longer exist; therefore a black screen is displayed. 
