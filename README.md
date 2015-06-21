@@ -25,6 +25,10 @@ $ cd WYInteractiveTransitions
 ```
 
 2) Drag ``WYTransitionManager.swift`` file into your own project
+If you're Objective-C user, please include the header file
+```
+#import "WYTransitionManager-Swift.h"
+```
 
 3) Create instance
 ```
