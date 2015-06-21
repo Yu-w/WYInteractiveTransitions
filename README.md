@@ -1,7 +1,7 @@
 # WYInteractiveTransitions
 Customized transitions between view controllers for iOS. One Line of code with fully interactive animations. Written purely in Swift.
 
-**Animations**
+**Four animations is embedded right now:**
 * Push
 
 <img src="./Screenshots/push.gif" width="320" height="550"/>
