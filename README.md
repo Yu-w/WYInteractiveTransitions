@@ -1,6 +1,13 @@
 # WYInteractiveTransitions
 Customized transitions between view controllers for iOS. One Line of code with fully interactive animations. Written purely in Swift.
 
+# Animations
+* Push
+* SlideUp
+* Swing
+* Zoom
+* Your customized animations
+
 # Usage
 1) Download the repository
 ```
@@ -16,8 +23,8 @@ $ let transitionMgr = WYTransitionManager()
 ```
 4) Configure WYTransitionManager in proper position (normally in prepare segue)
 ```
-$ WYTransitionMgr.configureTransition(duration: 0.5, toViewController: toView!, 
-$                                     handGestureEnable: true, transitionType: WYTransitoinType.Push)
+$ transitionMgr.configureTransition(duration: 0.5, toViewController: toView!, 
+$                                 handGestureEnable: true, transitionType: WYTransitoinType.Push)
 ```
 
 # Demo
@@ -35,13 +42,14 @@ $ open WYInteractiveTransitions.xcodeproj
 3) Compile and run the app in simulator
 * Under Xcode, press ``Ctrl + R``
 
-# Where to use
+# Example Codes
 ```
+$ let transitionMgr = WYTransitionManager()
 $ override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
 $   if segue.identifier == "showSegue" {
 $     let toView = segue.destinationViewController as? UIViewController
-$       WYTransitionMgr.configureTransition(duration: 0.5, toViewController: toView!, 
-$                                           handGestureEnable: true, transitionType: WYTransitoinType.Push)
+$       transitionMgr.configureTransition(duration: 0.5, toViewController: toView!, 
+$                                       handGestureEnable: true, transitionType: WYTransitoinType.Push)
 $   }
 $ }
 ```
