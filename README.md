@@ -104,8 +104,5 @@ $ }
 ```
 The perfect solution is to add ``cancelInteractiveTransition()`` in above gesture selector, but a new problem arised: whenever ``cancelInteractiveTransition()`` is called, the dismissed view controller is no longer exist; therefore a black screen is displayed.
 
-## Author
-Yu Wang, wangyu2165@gmail
-
 ## LICENSE
 WYInteractiveTransitions is available under the [MIT License](LICENSE), see LICENSE for more infomation.
