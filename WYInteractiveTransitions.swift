@@ -8,14 +8,14 @@
 
 import UIKit
 
-enum WYTransitoinType {
+public enum WYTransitoinType {
     case Push
     case Zoom
     case Up
     case Swing
 }
 
-class WYTransitionManager: UIPercentDrivenInteractiveTransition, UIViewControllerAnimatedTransitioning, UIViewControllerTransitioningDelegate {
+public class WYTransitionManager: UIPercentDrivenInteractiveTransition, UIViewControllerAnimatedTransitioning, UIViewControllerTransitioningDelegate {
     
     func configureTransition(duration: NSTimeInterval?=nil, toViewController: UIViewController, handGestureEnable: Bool, transitionType: WYTransitoinType) {
         if let duration = duration {
