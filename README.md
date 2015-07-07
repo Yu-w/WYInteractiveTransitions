@@ -40,18 +40,18 @@ pod "WYInteractiveTransitions"
 $ git clone https://github.com/yuwang17/WYInteractiveTransitions.git
 ```
 
-2) Drag ``WYTransitionManager.swift`` file into your own project or using pod install
+2) Drag ``WYInteractiveTransitions.swift`` file into your own project or using pod install
 
 If you're Objective-C user, please include the header file
 ```
-#import "WYTransitionManager-Swift.h"
+#import "WYInteractiveTransitions-Swift.h"
 ```
 
 3) Create instance
 ```
-$ let transitionMgr = WYTransitionManager()
+$ let transitionMgr = WYInteractiveTransitions()
 ```
-4) Configure WYTransitionManager in proper position
+4) Configure WYInteractiveTransitions in proper position
 ```
 $ transitionMgr.configureTransition(duration: 0.5, toViewController: toView!, 
                                  handGestureEnable: true, transitionType: WYTransitoinType.Push)
@@ -80,7 +80,7 @@ $ open WYInteractiveTransitions.xcodeproj
 
 ## Example Codes
 ```
-$ let transitionMgr = WYTransitionManager()
+$ let transitionMgr = WYInteractiveTransitions()
 $ override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
 $   if segue.identifier == "showSegue" {
 $     let toView = segue.destinationViewController as? UIViewController
