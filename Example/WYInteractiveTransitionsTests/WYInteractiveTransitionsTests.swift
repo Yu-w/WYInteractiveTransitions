@@ -1,8 +1,15 @@
+//
+//  WYInteractiveTransitionsTests.swift
+//  WYInteractiveTransitionsTests
+//
+//  Created by Wang Yu on 6/21/15.
+//  Copyright (c) 2015 Yu Wang. All rights reserved.
+//
+
 import UIKit
 import XCTest
-import WYInteractiveTransitions
 
-class Tests: XCTestCase {
+class WYInteractiveTransitionsTests: XCTestCase {
     
     override func setUp() {
         super.setUp()

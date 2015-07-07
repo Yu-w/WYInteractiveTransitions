@@ -7,136 +7,171 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		355D62D16BED7BB693245573 /* Pods_WYInteractiveTransitions_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32B8ACBC39F3621B34E9A7AE /* Pods_WYInteractiveTransitions_Tests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		882FC97C1B36EC9E000949D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882FC97B1B36EC9E000949D8 /* AppDelegate.swift */; };
+		882FC97E1B36EC9E000949D8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882FC97D1B36EC9E000949D8 /* ViewController.swift */; };
+		882FC9811B36EC9E000949D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 882FC97F1B36EC9E000949D8 /* Main.storyboard */; };
+		882FC9831B36EC9E000949D8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 882FC9821B36EC9E000949D8 /* Images.xcassets */; };
+		882FC9861B36EC9E000949D8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 882FC9841B36EC9E000949D8 /* LaunchScreen.xib */; };
+		882FC9921B36EC9E000949D8 /* WYInteractiveTransitionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882FC9911B36EC9E000949D8 /* WYInteractiveTransitionsTests.swift */; };
+		882FC99C1B36ECCE000949D8 /* WYTransitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882FC99B1B36ECCE000949D8 /* WYTransitionManager.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		882FC98C1B36EC9E000949D8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 882FC96E1B36EC9E000949D8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 882FC9751B36EC9E000949D8;
+			remoteInfo = WYInteractiveTransitions;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
-		32B8ACBC39F3621B34E9A7AE /* Pods_WYInteractiveTransitions_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WYInteractiveTransitions_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4C7449757E5DDEB7F028A387 /* Pods-WYInteractiveTransitions_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WYInteractiveTransitions_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WYInteractiveTransitions_Tests/Pods-WYInteractiveTransitions_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		4F0BCCC17886A209C0DE75F1 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		607FACE51AFB9204008FA782 /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = Tests.xctest; path = WYInteractiveTransitions_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		6D8DFB778C72D2E9AC69A609 /* WYInteractiveTransitions.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = WYInteractiveTransitions.podspec; path = ../WYInteractiveTransitions.podspec; sourceTree = "<group>"; };
-		908F4B1385DA97A7E4ED2F16 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		C9A284E6E740922A02887DED /* Pods-WYInteractiveTransitions_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WYInteractiveTransitions_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WYInteractiveTransitions_Tests/Pods-WYInteractiveTransitions_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		882FC9761B36EC9E000949D8 /* WYInteractiveTransitions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WYInteractiveTransitions.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		882FC97A1B36EC9E000949D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		882FC97B1B36EC9E000949D8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		882FC97D1B36EC9E000949D8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		882FC9801B36EC9E000949D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		882FC9821B36EC9E000949D8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		882FC9851B36EC9E000949D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		882FC98B1B36EC9E000949D8 /* WYInteractiveTransitionsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WYInteractiveTransitionsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		882FC9901B36EC9E000949D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		882FC9911B36EC9E000949D8 /* WYInteractiveTransitionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WYInteractiveTransitionsTests.swift; sourceTree = "<group>"; };
+		882FC99B1B36ECCE000949D8 /* WYTransitionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WYTransitionManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		607FACE21AFB9204008FA782 /* Frameworks */ = {
+		882FC9731B36EC9E000949D8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				355D62D16BED7BB693245573 /* Pods_WYInteractiveTransitions_Tests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		882FC9881B36EC9E000949D8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		607FACC71AFB9204008FA782 = {
+		882FC96D1B36EC9E000949D8 = {
 			isa = PBXGroup;
 			children = (
-				607FACF51AFB993E008FA782 /* Podspec Metadata */,
-				607FACE81AFB9204008FA782 /* Tests */,
-				607FACD11AFB9204008FA782 /* Products */,
-				68B2A6020ED4EC0EED18AB62 /* Pods */,
-				83CA2FABC2D6BA6F5CDDD07B /* Frameworks */,
+				882FC9781B36EC9E000949D8 /* WYInteractiveTransitions */,
+				882FC98E1B36EC9E000949D8 /* WYInteractiveTransitionsTests */,
+				882FC9771B36EC9E000949D8 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		607FACD11AFB9204008FA782 /* Products */ = {
+		882FC9771B36EC9E000949D8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				607FACE51AFB9204008FA782 /* Tests.xctest */,
+				882FC9761B36EC9E000949D8 /* WYInteractiveTransitions.app */,
+				882FC98B1B36EC9E000949D8 /* WYInteractiveTransitionsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		607FACE81AFB9204008FA782 /* Tests */ = {
+		882FC9781B36EC9E000949D8 /* WYInteractiveTransitions */ = {
 			isa = PBXGroup;
 			children = (
-				607FACEB1AFB9204008FA782 /* Tests.swift */,
-				607FACE91AFB9204008FA782 /* Supporting Files */,
+				882FC97B1B36EC9E000949D8 /* AppDelegate.swift */,
+				882FC97D1B36EC9E000949D8 /* ViewController.swift */,
+				882FC97F1B36EC9E000949D8 /* Main.storyboard */,
+				882FC99B1B36ECCE000949D8 /* WYTransitionManager.swift */,
+				882FC9821B36EC9E000949D8 /* Images.xcassets */,
+				882FC9841B36EC9E000949D8 /* LaunchScreen.xib */,
+				882FC9791B36EC9E000949D8 /* Supporting Files */,
 			);
-			path = Tests;
+			path = WYInteractiveTransitions;
 			sourceTree = "<group>";
 		};
-		607FACE91AFB9204008FA782 /* Supporting Files */ = {
+		882FC9791B36EC9E000949D8 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				607FACEA1AFB9204008FA782 /* Info.plist */,
+				882FC97A1B36EC9E000949D8 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		607FACF51AFB993E008FA782 /* Podspec Metadata */ = {
+		882FC98E1B36EC9E000949D8 /* WYInteractiveTransitionsTests */ = {
 			isa = PBXGroup;
 			children = (
-				6D8DFB778C72D2E9AC69A609 /* WYInteractiveTransitions.podspec */,
-				908F4B1385DA97A7E4ED2F16 /* README.md */,
-				4F0BCCC17886A209C0DE75F1 /* LICENSE */,
+				882FC9911B36EC9E000949D8 /* WYInteractiveTransitionsTests.swift */,
+				882FC98F1B36EC9E000949D8 /* Supporting Files */,
 			);
-			name = "Podspec Metadata";
+			path = WYInteractiveTransitionsTests;
 			sourceTree = "<group>";
 		};
-		68B2A6020ED4EC0EED18AB62 /* Pods */ = {
+		882FC98F1B36EC9E000949D8 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				4C7449757E5DDEB7F028A387 /* Pods-WYInteractiveTransitions_Tests.debug.xcconfig */,
-				C9A284E6E740922A02887DED /* Pods-WYInteractiveTransitions_Tests.release.xcconfig */,
+				882FC9901B36EC9E000949D8 /* Info.plist */,
 			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		83CA2FABC2D6BA6F5CDDD07B /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				32B8ACBC39F3621B34E9A7AE /* Pods_WYInteractiveTransitions_Tests.framework */,
-			);
-			name = Frameworks;
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		607FACE41AFB9204008FA782 /* WYInteractiveTransitions_Tests */ = {
+		882FC9751B36EC9E000949D8 /* WYInteractiveTransitions */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "WYInteractiveTransitions_Tests" */;
+			buildConfigurationList = 882FC9951B36EC9E000949D8 /* Build configuration list for PBXNativeTarget "WYInteractiveTransitions" */;
 			buildPhases = (
-				F86ED0EF59C00D20397DD1DD /* Check Pods Manifest.lock */,
-				607FACE11AFB9204008FA782 /* Sources */,
-				607FACE21AFB9204008FA782 /* Frameworks */,
-				607FACE31AFB9204008FA782 /* Resources */,
-				9CEA2EC78D29AE1713B6A612 /* Embed Pods Frameworks */,
-				82E1300F9C94C5BACFF83ED7 /* Copy Pods Resources */,
+				882FC9721B36EC9E000949D8 /* Sources */,
+				882FC9731B36EC9E000949D8 /* Frameworks */,
+				882FC9741B36EC9E000949D8 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = WYInteractiveTransitions_Tests;
-			productName = Tests;
-			productReference = 607FACE51AFB9204008FA782 /* Tests.xctest */;
+			name = WYInteractiveTransitions;
+			productName = WYInteractiveTransitions;
+			productReference = 882FC9761B36EC9E000949D8 /* WYInteractiveTransitions.app */;
+			productType = "com.apple.product-type.application";
+		};
+		882FC98A1B36EC9E000949D8 /* WYInteractiveTransitionsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 882FC9981B36EC9E000949D8 /* Build configuration list for PBXNativeTarget "WYInteractiveTransitionsTests" */;
+			buildPhases = (
+				882FC9871B36EC9E000949D8 /* Sources */,
+				882FC9881B36EC9E000949D8 /* Frameworks */,
+				882FC9891B36EC9E000949D8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				882FC98D1B36EC9E000949D8 /* PBXTargetDependency */,
+			);
+			name = WYInteractiveTransitionsTests;
+			productName = WYInteractiveTransitionsTests;
+			productReference = 882FC98B1B36EC9E000949D8 /* WYInteractiveTransitionsTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		607FACC81AFB9204008FA782 /* Project object */ = {
+		882FC96E1B36EC9E000949D8 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0630;
-				ORGANIZATIONNAME = CocoaPods;
+				ORGANIZATIONNAME = "Yu Wang";
 				TargetAttributes = {
-					607FACE41AFB9204008FA782 = {
-						CreatedOnToolsVersion = 6.3.1;
-						TestTargetID = 607FACCF1AFB9204008FA782;
+					882FC9751B36EC9E000949D8 = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+					882FC98A1B36EC9E000949D8 = {
+						CreatedOnToolsVersion = 6.3.2;
+						TestTargetID = 882FC9751B36EC9E000949D8;
 					};
 				};
 			};
-			buildConfigurationList = 607FACCB1AFB9204008FA782 /* Build configuration list for PBXProject "WYInteractiveTransitions" */;
+			buildConfigurationList = 882FC9711B36EC9E000949D8 /* Build configuration list for PBXProject "WYInteractiveTransitions" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -144,18 +179,29 @@
 				en,
 				Base,
 			);
-			mainGroup = 607FACC71AFB9204008FA782;
-			productRefGroup = 607FACD11AFB9204008FA782 /* Products */;
+			mainGroup = 882FC96D1B36EC9E000949D8;
+			productRefGroup = 882FC9771B36EC9E000949D8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				607FACE41AFB9204008FA782 /* WYInteractiveTransitions_Tests */,
+				882FC9751B36EC9E000949D8 /* WYInteractiveTransitions */,
+				882FC98A1B36EC9E000949D8 /* WYInteractiveTransitionsTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		607FACE31AFB9204008FA782 /* Resources */ = {
+		882FC9741B36EC9E000949D8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				882FC9811B36EC9E000949D8 /* Main.storyboard in Resources */,
+				882FC9861B36EC9E000949D8 /* LaunchScreen.xib in Resources */,
+				882FC9831B36EC9E000949D8 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		882FC9891B36EC9E000949D8 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -164,67 +210,56 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		82E1300F9C94C5BACFF83ED7 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WYInteractiveTransitions_Tests/Pods-WYInteractiveTransitions_Tests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		9CEA2EC78D29AE1713B6A612 /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WYInteractiveTransitions_Tests/Pods-WYInteractiveTransitions_Tests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F86ED0EF59C00D20397DD1DD /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
-		607FACE11AFB9204008FA782 /* Sources */ = {
+		882FC9721B36EC9E000949D8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACEC1AFB9204008FA782 /* Tests.swift in Sources */,
+				882FC99C1B36ECCE000949D8 /* WYTransitionManager.swift in Sources */,
+				882FC97E1B36EC9E000949D8 /* ViewController.swift in Sources */,
+				882FC97C1B36EC9E000949D8 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		882FC9871B36EC9E000949D8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				882FC9921B36EC9E000949D8 /* WYInteractiveTransitionsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		882FC98D1B36EC9E000949D8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 882FC9751B36EC9E000949D8 /* WYInteractiveTransitions */;
+			targetProxy = 882FC98C1B36EC9E000949D8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		882FC97F1B36EC9E000949D8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				882FC9801B36EC9E000949D8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		882FC9841B36EC9E000949D8 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				882FC9851B36EC9E000949D8 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
-		607FACED1AFB9204008FA782 /* Debug */ = {
+		882FC9931B36EC9E000949D8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -268,7 +303,7 @@
 			};
 			name = Debug;
 		};
-		607FACEE1AFB9204008FA782 /* Release */ = {
+		882FC9941B36EC9E000949D8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -305,10 +340,30 @@
 			};
 			name = Release;
 		};
-		607FACF31AFB9204008FA782 /* Debug */ = {
+		882FC9961B36EC9E000949D8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4C7449757E5DDEB7F028A387 /* Pods-WYInteractiveTransitions_Tests.debug.xcconfig */;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = WYInteractiveTransitions/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		882FC9971B36EC9E000949D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = WYInteractiveTransitions/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		882FC9991B36EC9E000949D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -317,50 +372,59 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = Tests/Info.plist;
+				INFOPLIST_FILE = WYInteractiveTransitionsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WYInteractiveTransitions_Example.app/WYInteractiveTransitions_Example";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WYInteractiveTransitions.app/WYInteractiveTransitions";
 			};
 			name = Debug;
 		};
-		607FACF41AFB9204008FA782 /* Release */ = {
+		882FC99A1B36EC9E000949D8 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C9A284E6E740922A02887DED /* Pods-WYInteractiveTransitions_Tests.release.xcconfig */;
 			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = Tests/Info.plist;
+				INFOPLIST_FILE = WYInteractiveTransitionsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WYInteractiveTransitions_Example.app/WYInteractiveTransitions_Example";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WYInteractiveTransitions.app/WYInteractiveTransitions";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		607FACCB1AFB9204008FA782 /* Build configuration list for PBXProject "WYInteractiveTransitions" */ = {
+		882FC9711B36EC9E000949D8 /* Build configuration list for PBXProject "WYInteractiveTransitions" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				607FACED1AFB9204008FA782 /* Debug */,
-				607FACEE1AFB9204008FA782 /* Release */,
+				882FC9931B36EC9E000949D8 /* Debug */,
+				882FC9941B36EC9E000949D8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "WYInteractiveTransitions_Tests" */ = {
+		882FC9951B36EC9E000949D8 /* Build configuration list for PBXNativeTarget "WYInteractiveTransitions" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				607FACF31AFB9204008FA782 /* Debug */,
-				607FACF41AFB9204008FA782 /* Release */,
+				882FC9961B36EC9E000949D8 /* Debug */,
+				882FC9971B36EC9E000949D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		882FC9981B36EC9E000949D8 /* Build configuration list for PBXNativeTarget "WYInteractiveTransitionsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				882FC9991B36EC9E000949D8 /* Debug */,
+				882FC99A1B36EC9E000949D8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 607FACC81AFB9204008FA782 /* Project object */;
+	rootObject = 882FC96E1B36EC9E000949D8 /* Project object */;
 }
