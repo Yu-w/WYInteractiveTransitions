@@ -38,10 +38,9 @@ pod "WYInteractiveTransitions"
 1) Download the repository
 ```
 $ git clone https://github.com/yuwang17/WYInteractiveTransitions.git
-$ cd WYInteractiveTransitions
 ```
 
-2) Drag ``WYTransitionManager.swift`` file into your own project
+2) Drag ``WYTransitionManager.swift`` file into your own project or using pod install
 
 If you're Objective-C user, please include the header file
 ```
@@ -68,7 +67,7 @@ $ transitionMgr.configureTransition(duration: 0.5, toViewController: toView!,
 1) Download the repository
 ```
 $ git clone https://github.com/yuwang17/WYInteractiveTransitions.git
-$ cd WYInteractiveTransitions/Demo
+$ cd WYInteractiveTransitions/Example
 ```
 
 2) Open the workspace
