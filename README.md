@@ -34,34 +34,52 @@ it, simply add the following line to your Podfile:
 pod "WYInteractiveTransitions"
 ```
 
-## Usage
-1) Download the repository
+
+Or download the git repository
 ```
 $ git clone https://github.com/yuwang17/WYInteractiveTransitions.git
 ```
 
-2) Drag ``WYInteractiveTransitions.swift`` file into your own project or using pod install
+2) Drag ``WYInteractiveTransitions.swift`` file into your own project
+
+Then import the module in your file
+```
+import WYInteractiveTransitions
+```
 
 If you're Objective-C user, please include the header file
 ```
 #import "WYInteractiveTransitions-Swift.h"
 ```
 
-3) Create instance
+## Usage
+1) Create instance
 ```
 $ let transitionMgr = WYInteractiveTransitions()
 ```
-4) Configure WYInteractiveTransitions in proper position
+2) Configure WYInteractiveTransitions in proper position
 ```
 $ transitionMgr.configureTransition(duration: 0.5, toViewController: toView!, 
                                  handGestureEnable: true, transitionType: WYTransitoinType.Push)
 ```
-5) Present view controller or dismiss would invoke the transitions
+3) Present view controller or dismiss would invoke the transitions
 * ``performSegueWithIdentifier``
 * ``presentViewController``
 * ``dismissViewController``
 * ``unwindViewController``
 * etc...
+
+## Example Codes
+```
+$ let transitionMgr = WYInteractiveTransitions()
+$ override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+$   if segue.identifier == "showSegue" {
+$     let toView = segue.destinationViewController as? UIViewController
+$       transitionMgr.configureTransition(duration: 0.5, toViewController: toView!, 
+$                                       handGestureEnable: true, transitionType: WYTransitoinType.Push)
+$   }
+$ }
+```
 
 ## Demo
 1) Download the repository
@@ -77,18 +95,6 @@ $ open WYInteractiveTransitions.xcodeproj
 
 3) Compile and run the app in simulator
 * Under Xcode, press ``Ctrl + R``
-
-## Example Codes
-```
-$ let transitionMgr = WYInteractiveTransitions()
-$ override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-$   if segue.identifier == "showSegue" {
-$     let toView = segue.destinationViewController as? UIViewController
-$       transitionMgr.configureTransition(duration: 0.5, toViewController: toView!, 
-$                                       handGestureEnable: true, transitionType: WYTransitoinType.Push)
-$   }
-$ }
-```
 
 ## Requirements
 * Xcode 6
