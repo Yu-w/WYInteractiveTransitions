@@ -27,7 +27,7 @@ Customized transitions between view controllers for iOS. One Line of code with f
 
 ## Installation
 
-WYInteractiveTransitions is available through [CocoaPods](http://cocoapods.org). To install
+#### WYInteractiveTransitions is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
@@ -35,12 +35,12 @@ pod "WYInteractiveTransitions"
 ```
 
 
-Or download the git repository
+#### Or download the git repository
 ```
 $ git clone https://github.com/yuwang17/WYInteractiveTransitions.git
 ```
 
-2) Drag ``WYInteractiveTransitions.swift`` file into your own project
+Drag ``WYInteractiveTransitions.swift`` file into your own project
 
 Then import the module in your file
 ```
