@@ -54,11 +54,7 @@ public class WYInteractiveTransitions: UIPercentDrivenInteractiveTransition, UIV
                 self.updateInteractiveTransition(animationRatio)
             } else if gesture.state == .Cancelled || gesture.state == .Failed || gesture.state == .Ended {
                 self.handIn = false
-                if velocity.x >= 0 {
-                    finishInteractiveTransition()
-                } else {
-                    cancelInteractiveTransition()
-                }
+                finishInteractiveTransition()
             }
         }
     }
