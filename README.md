@@ -36,30 +36,30 @@ pod "WYInteractiveTransitions"
 
 
 #### Or download the git repository
-```
-$ git clone https://github.com/yuwang17/WYInteractiveTransitions.git
+```fish
+ git clone https://github.com/yuwang17/WYInteractiveTransitions.git
 ```
 
 Drag ``WYInteractiveTransitions.swift`` file into your own project
 
 Then import the module in your file
-```
+```swift
 import WYInteractiveTransitions
 ```
 
 If you're Objective-C user, please include the header file
-```
+```swift
 #import "WYInteractiveTransitions-Swift.h"
 ```
 
 ## Usage
 1) Create instance
-```
-$ let transitionMgr = WYInteractiveTransitions()
+```swift
+let transitionMgr = WYInteractiveTransitions()
 ```
 2) Configure WYInteractiveTransitions in proper position
-```
-$ transitionMgr.configureTransition(duration: 0.5, toViewController: toView!, 
+```swift
+transitionMgr.configureTransition(duration: 0.5, toViewController: toView!, 
                                  handGestureEnable: true, transitionType: WYTransitoinType.Push)
 ```
 3) Present view controller or dismiss would invoke the transitions
@@ -70,27 +70,27 @@ $ transitionMgr.configureTransition(duration: 0.5, toViewController: toView!,
 * etc...
 
 ## Example Codes
-```
-$ let transitionMgr = WYInteractiveTransitions()
-$ override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-$   if segue.identifier == "showSegue" {
-$     let toView = segue.destinationViewController as? UIViewController
-$       transitionMgr.configureTransition(duration: 0.5, toViewController: toView!, 
-$                                       handGestureEnable: true, transitionType: WYTransitoinType.Push)
-$   }
-$ }
+```swift
+let transitionMgr = WYInteractiveTransitions()
+ override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+ if segue.identifier == "showSegue" {
+   let toView = segue.destinationViewController as? UIViewController
+     transitionMgr.configureTransition(duration: 0.5, toViewController: toView!, 
+                                      handGestureEnable: true, transitionType: WYTransitoinType.Push)
+  }
+}
 ```
 
 ## Demo
 1) Download the repository
-```
-$ git clone https://github.com/yuwang17/WYInteractiveTransitions.git
-$ cd WYInteractiveTransitions/Example
+```fish
+ git clone https://github.com/yuwang17/WYInteractiveTransitions.git
+ cd WYInteractiveTransitions/Example
 ```
 
 2) Open the workspace
-```
-$ open WYInteractiveTransitions.xcodeproj
+```fish
+ open WYInteractiveTransitions.xcodeproj
 ```
 
 3) Compile and run the app in simulator
@@ -102,10 +102,10 @@ $ open WYInteractiveTransitions.xcodeproj
 
 ## Flaws
 With gesutre enabled, there's no way animated to dismissed view controller when user screen edge pan gesture is cancelled.
-```
-$ else if gesture.state == .Cancelled || gesture.state == .Failed || gesture.state == .Ended {
-$   finishInteractiveTransition()
-$ }
+```swift
+ else if gesture.state == .Cancelled || gesture.state == .Failed || gesture.state == .Ended {
+   finishInteractiveTransition()
+ }
 ```
 The perfect solution is to add ``cancelInteractiveTransition()`` in above gesture selector, but a new problem arised: whenever ``cancelInteractiveTransition()`` is called, the dismissed view controller is no longer exist; therefore a black screen is displayed.
 
