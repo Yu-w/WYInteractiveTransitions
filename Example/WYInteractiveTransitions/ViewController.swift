@@ -11,7 +11,7 @@ import UIKit
 class ViewController: UIViewController {
     
     private let segueIdentifier: String = "showSegue"
-    private let WYTransitionMgr = WYTransitionManager()
+    private let WYTransitionMgr = WYInteractiveTransitions()
     
     @IBAction func trigerTransition(sender: UIButton) {
        performSegueWithIdentifier("showSegue", sender: sender)
@@ -20,17 +20,17 @@ class ViewController: UIViewController {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "showSegue" {
             if let sender = sender as? UIButton {
-                let toView = segue.destinationViewController as? UIViewController
+                let toView = segue.destinationViewController
                 let duration = 0.5
                 switch sender.currentTitle! as String {
                 case "Push":
-                    WYTransitionMgr.configureTransition(duration: duration, toViewController: toView!, handGestureEnable: true, transitionType: WYTransitoinType.Push)
+                    WYTransitionMgr.configureTransition(duration, toViewController: toView, handGestureEnable: true, transitionType: WYTransitoinType.Push)
                 case "Up":
-                    WYTransitionMgr.configureTransition(duration: duration, toViewController: toView!, handGestureEnable: true, transitionType: WYTransitoinType.Up)
+                    WYTransitionMgr.configureTransition(duration, toViewController: toView, handGestureEnable: true, transitionType: WYTransitoinType.Up)
                 case "Zoom":
-                    WYTransitionMgr.configureTransition(duration: duration, toViewController: toView!, handGestureEnable: true, transitionType: WYTransitoinType.Zoom)
+                    WYTransitionMgr.configureTransition(duration, toViewController: toView, handGestureEnable: true, transitionType: WYTransitoinType.Zoom)
                 case "Swing":
-                    WYTransitionMgr.configureTransition(duration: duration, toViewController: toView!, handGestureEnable: true, transitionType: WYTransitoinType.Swing)
+                    WYTransitionMgr.configureTransition(duration, toViewController: toView, handGestureEnable: true, transitionType: WYTransitoinType.Swing)
                 default: break
                 }
 

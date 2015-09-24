@@ -13,7 +13,7 @@
 		882FC9831B36EC9E000949D8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 882FC9821B36EC9E000949D8 /* Images.xcassets */; };
 		882FC9861B36EC9E000949D8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 882FC9841B36EC9E000949D8 /* LaunchScreen.xib */; };
 		882FC9921B36EC9E000949D8 /* WYInteractiveTransitionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882FC9911B36EC9E000949D8 /* WYInteractiveTransitionsTests.swift */; };
-		882FC99C1B36ECCE000949D8 /* WYTransitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882FC99B1B36ECCE000949D8 /* WYTransitionManager.swift */; };
+		88E6DAC01BB4A64E00FFA05B /* WYInteractiveTransitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E6DABF1BB4A64E00FFA05B /* WYInteractiveTransitions.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +37,7 @@
 		882FC98B1B36EC9E000949D8 /* WYInteractiveTransitionsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WYInteractiveTransitionsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		882FC9901B36EC9E000949D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		882FC9911B36EC9E000949D8 /* WYInteractiveTransitionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WYInteractiveTransitionsTests.swift; sourceTree = "<group>"; };
-		882FC99B1B36ECCE000949D8 /* WYTransitionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WYTransitionManager.swift; sourceTree = "<group>"; };
+		88E6DABF1BB4A64E00FFA05B /* WYInteractiveTransitions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WYInteractiveTransitions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,7 +82,7 @@
 				882FC97B1B36EC9E000949D8 /* AppDelegate.swift */,
 				882FC97D1B36EC9E000949D8 /* ViewController.swift */,
 				882FC97F1B36EC9E000949D8 /* Main.storyboard */,
-				882FC99B1B36ECCE000949D8 /* WYTransitionManager.swift */,
+				88E6DABF1BB4A64E00FFA05B /* WYInteractiveTransitions.swift */,
 				882FC9821B36EC9E000949D8 /* Images.xcassets */,
 				882FC9841B36EC9E000949D8 /* LaunchScreen.xib */,
 				882FC9791B36EC9E000949D8 /* Supporting Files */,
@@ -159,6 +159,7 @@
 		882FC96E1B36EC9E000949D8 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = "Yu Wang";
 				TargetAttributes = {
@@ -215,7 +216,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				882FC99C1B36ECCE000949D8 /* WYTransitionManager.swift in Sources */,
+				88E6DAC01BB4A64E00FFA05B /* WYInteractiveTransitions.swift in Sources */,
 				882FC97E1B36EC9E000949D8 /* ViewController.swift in Sources */,
 				882FC97C1B36EC9E000949D8 /* AppDelegate.swift in Sources */,
 			);
