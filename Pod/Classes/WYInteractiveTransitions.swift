@@ -1,6 +1,6 @@
 //
-//  TransitionManager.swift
-//  JokeBox
+//  WYInteractiveTransitions.swift
+//  WYInteractiveTransitions
 //
 //  Created by Wang Yu on 6/5/15.
 //  Copyright (c) 2015 Yu Wang. All rights reserved.
@@ -27,7 +27,7 @@ public class WYInteractiveTransitions: UIPercentDrivenInteractiveTransition, UIV
         self.toViewController?.transitioningDelegate = self
         
         if handGestureEnable == true {
-            var panEdgeGesture = UIScreenEdgePanGestureRecognizer(target: self, action: "screenEdgePanGestureHandler:")
+            let panEdgeGesture = UIScreenEdgePanGestureRecognizer(target: self, action: "screenEdgePanGestureHandler:")
             panEdgeGesture.edges = UIRectEdge.Left
             toViewController.view.addGestureRecognizer(panEdgeGesture)
         }
@@ -43,7 +43,6 @@ public class WYInteractiveTransitions: UIPercentDrivenInteractiveTransition, UIV
     func screenEdgePanGestureHandler(gesture: UIScreenEdgePanGestureRecognizer) {
         if let toView = toViewController {
             let location: CGPoint = gesture.translationInView(toView.view)
-            let velocity: CGPoint = gesture.velocityInView(toView.view)
             
             if gesture.state == UIGestureRecognizerState.Began {
                 self.handIn = true
@@ -60,7 +59,7 @@ public class WYInteractiveTransitions: UIPercentDrivenInteractiveTransition, UIV
     }
     
     public func animateTransition(transitionContext: UIViewControllerContextTransitioning) {
-        let container = transitionContext.containerView()
+        let container = transitionContext.containerView()!
         let fromView = transitionContext.viewForKey(UITransitionContextFromViewKey)!
         let toView = transitionContext.viewForKey(UITransitionContextToViewKey)!
         let duration = self.transitionDuration(transitionContext)
@@ -100,7 +99,7 @@ public class WYInteractiveTransitions: UIPercentDrivenInteractiveTransition, UIV
                 
                 container.addSubview(toView)
                 container.addSubview(fromView)
-                UIView.animateWithDuration(duration, delay: 0, usingSpringWithDamping: 0.7, initialSpringVelocity: 0.8, options: UIViewAnimationOptions.CurveEaseInOut, animations: { () -> Void in
+                UIView.animateWithDuration(duration, delay: 0, usingSpringWithDamping: 0.7, initialSpringVelocity: 0.7, options: UIViewAnimationOptions.CurveEaseInOut, animations: { () -> Void in
                     fromView.transform = CGAffineTransformMakeTranslation(0, fromView.frame.size.height)
                     toView.transform = CGAffineTransformIdentity
                     toView.alpha = 1
@@ -126,7 +125,7 @@ public class WYInteractiveTransitions: UIPercentDrivenInteractiveTransition, UIV
             } else {
                 container.addSubview(toView)
                 container.addSubview(fromView)
-                UIView.animateWithDuration(duration, delay: 0, usingSpringWithDamping: 0.7, initialSpringVelocity: 0.8, options: UIViewAnimationOptions.CurveEaseInOut, animations: { () -> Void in
+                UIView.animateWithDuration(duration, delay: 0, usingSpringWithDamping: 0.7, initialSpringVelocity: 0.7, options: UIViewAnimationOptions.CurveEaseInOut, animations: { () -> Void in
                     fromView.transform = CGAffineTransformMakeScale(2, 2)
                     fromView.alpha = 0
                     toView.transform = CGAffineTransformMakeScale(1, 1)
@@ -149,17 +148,16 @@ public class WYInteractiveTransitions: UIPercentDrivenInteractiveTransition, UIV
             container.addSubview(toView)
             container.addSubview(fromView)
             let duration = self.transitionDuration(transitionContext)
-            UIView.animateWithDuration(duration, delay: 0, usingSpringWithDamping: 0.5, initialSpringVelocity: 0.8, options: nil, animations: {
+            UIView.animateWithDuration(duration, delay: 0, usingSpringWithDamping: 0.5, initialSpringVelocity: 0.7, options: [], animations: {
                 fromView.transform = self.presenting ? offScreenLeft : offScreenRight
                 toView.transform = CGAffineTransformIdentity
                 }, completion: { finished in
                     transitionContext.completeTransition(true)
             })
-        default: break
         }
     }
     
-    public func transitionDuration(transitionContext: UIViewControllerContextTransitioning) -> NSTimeInterval {
+    public func transitionDuration(transitionContext: UIViewControllerContextTransitioning?) -> NSTimeInterval {
         return durationTransition
     }
     
