@@ -60,9 +60,12 @@ public class WYInteractiveTransitions: UIPercentDrivenInteractiveTransition, UIV
     
     public func animateTransition(transitionContext: UIViewControllerContextTransitioning) {
         let container = transitionContext.containerView()!
-        let fromView = transitionContext.viewForKey(UITransitionContextFromViewKey)!
-        let toView = transitionContext.viewForKey(UITransitionContextToViewKey)!
+        let fromVC = transitionContext.viewControllerForKey(UITransitionContextFromViewControllerKey)!
+        let toVC = transitionContext.viewControllerForKey(UITransitionContextToViewControllerKey)!
+        let fromView = fromVC.view
+        let toView = toVC.view
         let duration = self.transitionDuration(transitionContext)
+        defer { UIApplication.sharedApplication().keyWindow!.addSubview(toVC.view) }
         
         switch transitionType {
         case WYTransitoinType.Push:
