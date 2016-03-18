@@ -73,10 +73,6 @@ public class WYInteractiveTransitions: UIPercentDrivenInteractiveTransition, UIV
         let fromView = fromVC.view
         let toView = toVC.view
         let duration = self.transitionDuration(transitionContext)
-        print(fromVC)
-        print(toVC)
-        print(fromView)
-        print(toView)
         
         let completeTransition: () -> () = {
             let isCancelled = transitionContext.transitionWasCancelled()
