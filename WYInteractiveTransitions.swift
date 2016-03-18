@@ -43,26 +43,45 @@ public class WYInteractiveTransitions: UIPercentDrivenInteractiveTransition, UIV
     func screenEdgePanGestureHandler(gesture: UIScreenEdgePanGestureRecognizer) {
         if let toView = toViewController {
             let location: CGPoint = gesture.translationInView(toView.view)
+            let velocity = gesture.velocityInView(toView.view).x
             
-            if gesture.state == UIGestureRecognizerState.Began {
+            switch gesture.state {
+            case .Began:
                 self.handIn = true
                 toView.modalPresentationStyle = UIModalPresentationStyle.Custom
                 toView.dismissViewControllerAnimated(true, completion: nil)
-            } else if gesture.state == UIGestureRecognizerState.Changed {
+            case .Changed:
                 let animationRatio: CGFloat = location.x / toView.view.bounds.width
                 self.updateInteractiveTransition(animationRatio)
-            } else if gesture.state == .Cancelled || gesture.state == .Failed || gesture.state == .Ended {
+            case .Ended, .Cancelled, .Failed:
                 self.handIn = false
-                finishInteractiveTransition()
+                if velocity > 0 {
+                    finishInteractiveTransition()
+                } else {
+                    cancelInteractiveTransition()
+                }
+            default: break
             }
+            
         }
     }
     
     public func animateTransition(transitionContext: UIViewControllerContextTransitioning) {
         let container = transitionContext.containerView()!
-        let fromView = transitionContext.viewForKey(UITransitionContextFromViewKey)!
-        let toView = transitionContext.viewForKey(UITransitionContextToViewKey)!
+        let fromVC = transitionContext.viewControllerForKey(UITransitionContextFromViewControllerKey)!
+        let toVC = transitionContext.viewControllerForKey(UITransitionContextToViewControllerKey)!
+        let fromView = fromVC.view
+        let toView = toVC.view
         let duration = self.transitionDuration(transitionContext)
+        print(fromVC)
+        print(toVC)
+        print(fromView)
+        print(toView)
+        
+        let completeTransition: () -> () = {
+            let isCancelled = transitionContext.transitionWasCancelled()
+            transitionContext.completeTransition(!isCancelled)
+        }
         
         switch transitionType {
         case WYTransitoinType.Push:
@@ -75,7 +94,7 @@ public class WYInteractiveTransitions: UIPercentDrivenInteractiveTransition, UIV
                 fromView.transform = self.presenting ? moveToLeft : moveToRight
                 toView.transform = CGAffineTransformIdentity
                 }) { (finished) -> Void in
-                    transitionContext.completeTransition(true)
+                    completeTransition()
             }
             
         case WYTransitoinType.Up:
@@ -89,7 +108,7 @@ public class WYInteractiveTransitions: UIPercentDrivenInteractiveTransition, UIV
                     fromView.alpha = 0.5
                     toView.transform = CGAffineTransformIdentity
                     }, completion: { (finished) -> Void in
-                        transitionContext.completeTransition(true)
+                        completeTransition()
                 })
             } else {
                 let transfrom = toView.transform
@@ -104,7 +123,7 @@ public class WYInteractiveTransitions: UIPercentDrivenInteractiveTransition, UIV
                     toView.transform = CGAffineTransformIdentity
                     toView.alpha = 1
                     }, completion: { (finished) -> Void in
-                        transitionContext.completeTransition(true)
+                        completeTransition()
                 })
             }
             
@@ -120,7 +139,7 @@ public class WYInteractiveTransitions: UIPercentDrivenInteractiveTransition, UIV
                     toView.transform = CGAffineTransformIdentity
                     toView.alpha = 1
                     }, completion: { (finished) -> Void in
-                        transitionContext.completeTransition(true)
+                        completeTransition()
                 })
             } else {
                 container.addSubview(toView)
@@ -131,7 +150,8 @@ public class WYInteractiveTransitions: UIPercentDrivenInteractiveTransition, UIV
                     toView.transform = CGAffineTransformMakeScale(1, 1)
                     toView.alpha = 1
                     }, completion: { (finished) -> Void in
-                        transitionContext.completeTransition(true)
+                        completeTransition()
+                        
                 })
             }
             
@@ -152,7 +172,7 @@ public class WYInteractiveTransitions: UIPercentDrivenInteractiveTransition, UIV
                 fromView.transform = self.presenting ? offScreenLeft : offScreenRight
                 toView.transform = CGAffineTransformIdentity
                 }, completion: { finished in
-                    transitionContext.completeTransition(true)
+                    completeTransition()
             })
         }
     }
