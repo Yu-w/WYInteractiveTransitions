@@ -3,6 +3,7 @@
 [![Version](https://img.shields.io/cocoapods/v/WYInteractiveTransitions.svg?style=flat)](http://cocoapods.org/pods/WYInteractiveTransitions)
 [![License](https://img.shields.io/cocoapods/l/WYInteractiveTransitions.svg?style=flat)](http://cocoapods.org/pods/WYInteractiveTransitions)
 [![Platform](https://img.shields.io/cocoapods/p/WYInteractiveTransitions.svg?style=flat)](http://cocoapods.org/pods/WYInteractiveTransitions)
+![Swift 2.0](https://img.shields.io/badge/swift-2.0-orange.svg)
 
 Interactive only can be done with UINavigationController? No! **WYInteractiveTransitions** come to rescue, bringing interactive transition to **model presentation** between view controllers.
 
