@@ -3,7 +3,9 @@
 [![Version](https://img.shields.io/cocoapods/v/WYInteractiveTransitions.svg?style=flat)](http://cocoapods.org/pods/WYInteractiveTransitions)
 [![License](https://img.shields.io/cocoapods/l/WYInteractiveTransitions.svg?style=flat)](http://cocoapods.org/pods/WYInteractiveTransitions)
 [![Platform](https://img.shields.io/cocoapods/p/WYInteractiveTransitions.svg?style=flat)](http://cocoapods.org/pods/WYInteractiveTransitions)
+![Swift 2.0](https://img.shields.io/badge/swift-2.0-orange.svg)
 
+Interactive only can be done with UINavigationController? No! **WYInteractiveTransitions** come to rescue, bringing interactive transition to **model presentation** between view controllers.
 
 Customized transitions between view controllers for iOS. One Line of code with fully interactive animations. Written purely in Swift.
 
@@ -99,15 +101,6 @@ let transitionMgr = WYInteractiveTransitions()
 ## Requirements
 * Xcode 6
 * iOS 7
-
-## Flaws
-With gesutre enabled, there's no way animated to dismissed view controller when user screen edge pan gesture is cancelled.
-```swift
- else if gesture.state == .Cancelled || gesture.state == .Failed || gesture.state == .Ended {
-   finishInteractiveTransition()
- }
-```
-The perfect solution is to add ``cancelInteractiveTransition()`` in above gesture selector, but a new problem arised: whenever ``cancelInteractiveTransition()`` is called, the dismissed view controller is no longer exist; therefore a black screen is displayed.
 
 ## LICENSE
 WYInteractiveTransitions is available under the [MIT License](LICENSE), see LICENSE for more infomation.
