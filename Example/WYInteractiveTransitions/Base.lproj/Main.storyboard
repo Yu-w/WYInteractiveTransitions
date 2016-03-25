@@ -71,7 +71,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <segue destination="NDu-ZM-V1N" kind="presentation" identifier="showSegue" id="hFv-Uo-1ZO"/>
+                        <segue destination="NDu-ZM-V1N" kind="presentation" identifier="showSegue" modalPresentationStyle="overCurrentContext" id="hFv-Uo-1ZO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>

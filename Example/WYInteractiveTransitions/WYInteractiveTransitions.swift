@@ -17,14 +17,16 @@ public enum WYTransitoinType {
 
 public class WYInteractiveTransitions: UIPercentDrivenInteractiveTransition, UIViewControllerAnimatedTransitioning, UIViewControllerTransitioningDelegate {
     
-    public func configureTransition(duration: NSTimeInterval?=nil, toViewController: UIViewController, handGestureEnable: Bool, transitionType: WYTransitoinType) {
+    
+    public func configureTransition(duration duration: NSTimeInterval?=nil, toView toViewController: UIViewController, panEnable handGestureEnable: Bool?=true, type transitionType: WYTransitoinType) {
         if let duration = duration {
             self.durationTransition = duration
-        }
+        } else { self.durationTransition = 0.5 }
         
         self.transitionType = transitionType
         self.toViewController = toViewController
         self.toViewController?.transitioningDelegate = self
+        self.toViewController?.modalPresentationStyle = .FullScreen
         
         if handGestureEnable == true {
             let panEdgeGesture = UIScreenEdgePanGestureRecognizer(target: self, action: "screenEdgePanGestureHandler:")
@@ -36,7 +38,7 @@ public class WYInteractiveTransitions: UIPercentDrivenInteractiveTransition, UIV
     private var presenting = true
     private var gestureEnable = true
     private var handIn = false
-    private var transitionType = WYTransitoinType.Swing
+    private var transitionType = WYTransitoinType.Up
     private var toViewController: UIViewController?
     var durationTransition = 0.5
     

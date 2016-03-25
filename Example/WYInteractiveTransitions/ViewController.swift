@@ -11,29 +11,29 @@ import UIKit
 class ViewController: UIViewController {
     
     private let segueIdentifier: String = "showSegue"
-    private let WYTransitionMgr = WYInteractiveTransitions()
     
     @IBAction func trigerTransition(sender: UIButton) {
        performSegueWithIdentifier("showSegue", sender: sender)
     }
     
+    private let WYTransitionMgr = WYInteractiveTransitions()
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "showSegue" {
             if let sender = sender as? UIButton {
                 let toView = segue.destinationViewController
-                let duration = 0.5
+                var type: WYTransitoinType!
                 switch sender.currentTitle! as String {
                 case "Push":
-                    WYTransitionMgr.configureTransition(duration, toViewController: toView, handGestureEnable: true, transitionType: WYTransitoinType.Push)
+                    type = WYTransitoinType.Push
                 case "Up":
-                    WYTransitionMgr.configureTransition(duration, toViewController: toView, handGestureEnable: true, transitionType: WYTransitoinType.Up)
+                    type = WYTransitoinType.Up
                 case "Zoom":
-                    WYTransitionMgr.configureTransition(duration, toViewController: toView, handGestureEnable: true, transitionType: WYTransitoinType.Zoom)
+                    type = WYTransitoinType.Zoom
                 case "Swing":
-                    WYTransitionMgr.configureTransition(duration, toViewController: toView, handGestureEnable: true, transitionType: WYTransitoinType.Swing)
+                    type = WYTransitoinType.Swing
                 default: break
                 }
-
+                WYTransitionMgr.configureTransition(toView: toView, type: type)
             }
         }
     }
