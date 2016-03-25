@@ -71,11 +71,12 @@
                         </constraints>
                     </view>
                     <connections>
-                        <segue destination="NDu-ZM-V1N" kind="presentation" identifier="showSegue" modalPresentationStyle="overCurrentContext" id="hFv-Uo-1ZO"/>
+                        <segue destination="NDu-ZM-V1N" kind="presentation" identifier="showSegue" id="hFv-Uo-1ZO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="350" y="343"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="PUV-ve-h2d">
@@ -88,7 +89,7 @@
                     <view key="view" contentMode="scaleToFill" id="OZK-72-Jke">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="0.62185678659999999" blue="0.1583034187" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.97228699922561646" green="0.6816476583480835" blue="0.071992002427577972" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mFe-Qc-56Z" userLabel="First Responder" sceneMemberID="firstResponder"/>

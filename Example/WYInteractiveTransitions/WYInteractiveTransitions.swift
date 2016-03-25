@@ -22,12 +22,10 @@ public class WYInteractiveTransitions: UIPercentDrivenInteractiveTransition, UIV
         if let duration = duration {
             self.durationTransition = duration
         } else { self.durationTransition = 0.5 }
-        
         self.transitionType = transitionType
         self.toViewController = toViewController
         self.toViewController?.transitioningDelegate = self
         self.toViewController?.modalPresentationStyle = .FullScreen
-        
         if handGestureEnable == true {
             let panEdgeGesture = UIScreenEdgePanGestureRecognizer(target: self, action: "screenEdgePanGestureHandler:")
             panEdgeGesture.edges = UIRectEdge.Left
@@ -80,7 +78,7 @@ public class WYInteractiveTransitions: UIPercentDrivenInteractiveTransition, UIV
             let isCancelled = transitionContext.transitionWasCancelled()
             transitionContext.completeTransition(!isCancelled)
         }
-        
+
         switch transitionType {
         case WYTransitoinType.Push:
             let moveToLeft = CGAffineTransformMakeTranslation(-container.frame.width, 0)
