@@ -27,7 +27,7 @@ public class WYInteractiveTransitions: UIPercentDrivenInteractiveTransition, UIV
         self.toViewController?.transitioningDelegate = self
         self.toViewController?.modalPresentationStyle = .FullScreen
         if handGestureEnable == true {
-            let panEdgeGesture = UIScreenEdgePanGestureRecognizer(target: self, action: "screenEdgePanGestureHandler:")
+            let panEdgeGesture = UIScreenEdgePanGestureRecognizer(target: self, action: #selector(WYInteractiveTransitions.screenEdgePanGestureHandler(_:)))
             panEdgeGesture.edges = UIRectEdge.Left
             toViewController.view.addGestureRecognizer(panEdgeGesture)
         }
