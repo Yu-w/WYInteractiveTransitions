@@ -61,8 +61,7 @@ let transitionMgr = WYInteractiveTransitions()
 ```
 2) Configure WYInteractiveTransitions in proper position
 ```swift
-transitionMgr.configureTransition(duration: 0.5, toViewController: toView!, 
-                                 handGestureEnable: true, transitionType: WYTransitoinType.Push)
+transitionMgr.configureTransition(duration: 0.5, toView: toView!, panEnable: true, type: WYTransitoinType.Up)
 ```
 3) Present view controller or dismiss would invoke the transitions
 * ``performSegueWithIdentifier``
@@ -77,8 +76,7 @@ let transitionMgr = WYInteractiveTransitions()
  override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
  if segue.identifier == "showSegue" {
    let toView = segue.destinationViewController as? UIViewController
-     transitionMgr.configureTransition(duration: 0.5, toViewController: toView!, 
-                                      handGestureEnable: true, transitionType: WYTransitoinType.Push)
+     transitionMgr.configureTransition(duration: 0.5, toView: toView!, panEnable: true, type: WYTransitoinType.Up)
   }
 }
 ```
