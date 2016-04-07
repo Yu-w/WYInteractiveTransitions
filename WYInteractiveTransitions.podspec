@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "WYInteractiveTransitions"
-  s.version          = "1.0.2"
+  s.version          = "1.0.3"
   s.summary          = "WYInteractiveTransitions provides custimzed interactive transitions between view controllers in one line of code."
   s.description      = <<-DESC
                         WYInteractiveTransitions are called when view controller transitions take place.
