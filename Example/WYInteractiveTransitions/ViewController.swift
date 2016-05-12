@@ -33,7 +33,7 @@ class ViewController: UIViewController {
                     type = WYTransitoinType.Swing
                 default: break
                 }
-                WYTransitionMgr.configureTransition(toView: toView, type: type)
+                WYTransitionMgr.configureTransition(toView, type: type)
             }
         }
     }

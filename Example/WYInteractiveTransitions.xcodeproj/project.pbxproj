@@ -13,7 +13,7 @@
 		882FC9831B36EC9E000949D8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 882FC9821B36EC9E000949D8 /* Images.xcassets */; };
 		882FC9861B36EC9E000949D8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 882FC9841B36EC9E000949D8 /* LaunchScreen.xib */; };
 		882FC9921B36EC9E000949D8 /* WYInteractiveTransitionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882FC9911B36EC9E000949D8 /* WYInteractiveTransitionsTests.swift */; };
-		88E6DAC01BB4A64E00FFA05B /* WYInteractiveTransitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E6DABF1BB4A64E00FFA05B /* WYInteractiveTransitions.swift */; settings = {ASSET_TAGS = (); }; };
+		88E6DAC01BB4A64E00FFA05B /* WYInteractiveTransitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E6DABF1BB4A64E00FFA05B /* WYInteractiveTransitions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -160,7 +160,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0700;
-				LastUpgradeCheck = 0630;
+				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = "Yu Wang";
 				TargetAttributes = {
 					882FC9751B36EC9E000949D8 = {
@@ -281,6 +281,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -347,6 +348,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = WYInteractiveTransitions/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "yuwang.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -357,6 +359,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = WYInteractiveTransitions/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "yuwang.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -375,6 +378,7 @@
 				);
 				INFOPLIST_FILE = WYInteractiveTransitionsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "yuwang.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WYInteractiveTransitions.app/WYInteractiveTransitions";
 			};
@@ -390,6 +394,7 @@
 				);
 				INFOPLIST_FILE = WYInteractiveTransitionsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "yuwang.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WYInteractiveTransitions.app/WYInteractiveTransitions";
 			};
