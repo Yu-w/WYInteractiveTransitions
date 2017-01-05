@@ -15,9 +15,7 @@ public enum WYTransitoinType {
     case Swing
 }
 
-public class WYInteractiveTransitions: UIPercentDrivenInteractiveTransition, UIViewControllerAnimatedTransitioning, UIViewControllerTransitioningDelegate {
-    
-    
+public class WYInteractiveTransitions: UIPercentDrivenInteractiveTransition, UIViewControllerAnimatedTransitioning, UIViewControllerTransitioningDelegate {   
     public func configureTransition(duration duration: NSTimeInterval?=nil, toView toViewController: UIViewController, panEnable handGestureEnable: Bool?=true, type transitionType: WYTransitoinType) {
         if let duration = duration {
             self.durationTransition = duration
